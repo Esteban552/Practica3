@@ -1,0 +1,380 @@
+/* =========================================
+   1. ESTILOS BASE Y UTILIDADES
+   ========================================= */
+body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-wrapper {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #FFFFFF; /* Fondo base por defecto */
+  color: #1a1a1a;      /* Color texto base por defecto */
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Color Primario (Amarillo Zayeg) */
+.text-primary {
+  color: #FFC300;
+}
+
+/* Utility Padding */
+.section-padding {
+  padding: 80px 24px;
+}
+
+/* =========================================
+   2. NAVEGACIÓN (NAVBAR)
+   ========================================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.95); /* Fondo casi negro */
+  color: #f8f8f8;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #333333;
+}
+
+.nav-link {
+  color: #ffffff; /* Texto blanco para el menú */
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #FFC300;
+}
+
+/* =========================================
+   3. HERO SECTION (PORTADA)
+   ========================================= */
+.hero-section {
+  min-height: 600px;
+  background-image:
+    /* Capa Superior: Degradado oscuro */
+    linear-gradient(to right, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.2) 100%),
+    /* Capa Inferior: Tu imagen */
+    url('Public/FotoLarga2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* =========================================
+   4. INFO PLANS SECTION (QUÉ INCLUYE)
+   ========================================= */
+.info-plans-section {
+    padding: 80px 24px;
+    background-color: #111111; /* Coincide con la sección Misión */
+    color: #ffffff;
+}
+
+.info-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.info-subtitle {
+    font-size: 1.25rem;
+    color: #9ca3af;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .info-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.info-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #FFC300;
+    box-shadow: 0 10px 30px rgba(255, 195, 0, 0.1);
+}
+
+.info-img-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    border-bottom: 2px solid #FFC300;
+}
+
+.info-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.info-card:hover .info-img {
+    transform: scale(1.05);
+}
+
+.info-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.info-card-text {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* =========================================
+   5. PLANS SECTION (PRECIOS)
+   ========================================= */
+.plans-section {
+    padding: 80px 24px;
+    background-color: #111111; /* Mismo fondo oscuro */
+    color: #ffffff;
+}
+
+.plans-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.plans-subtitle {
+    font-size: 1.25rem;
+    color: #9ca3af;
+}
+
+/* Tarjetas de Planes (Modo Oscuro) */
+.plan-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    border-color: #FFC300;
+    box-shadow: 0 10px 30px rgba(255, 195, 0, 0.15);
+}
+
+/* Tarjeta Destacada (Plan Pro) */
+.plan-card.featured {
+    border: 2px solid #FFC300;
+    background: linear-gradient(135deg, #1a1a1a 0%, #222222 100%);
+    box-shadow: 0 10px 30px rgba(255, 195, 0, 0.1);
+}
+
+.plan-card.featured:hover {
+    box-shadow: 0 15px 40px rgba(255, 195, 0, 0.25);
+}
+
+
+/*==========================================
+        Menú de dieta 
+============================================*/
+
+
+
+/* =========================================
+   6. BOTONES
+   ========================================= */
+
+/* Botón Primario (Ghost Button con Hover Amarillo) */
+.btn-primary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #FFC300;
+  border-color: #FFC300;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(255, 195, 0, 0.4);
+}
+
+/* Botón Secundario (Estilo Ghost Sutil para fondos oscuros) */
+.btn-secondary {
+  background-color: transparent;
+  color: #d1d5db; /* Texto gris claro */
+  border: 1px solid #4b5563; /* Borde gris medio */
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   7. SECCIÓN EQUIPO
+   ========================================= */
+.team-member {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+}
+
+.team-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #FFC300 0%, #FFD700 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   8. SECCIÓN DIETA (Modo Oscuro Mejorado)
+   ========================================= */
+.diet-card {
+  background: #1a1a1a;       /* Fondo gris oscuro uniforme con el resto */
+  border: 1px solid #333333; /* Borde sutil */
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.diet-card:hover {
+  background: #222222;
+  border-color: #FFC300;     /* Borde amarillo al pasar el mouse */
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255, 195, 0, 0.1);
+}
+
+/* =========================================
+   9. SECCIÓN EQUIPO (Avatar Mejorado)
+   ========================================= */
+.team-member {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  /* Degradado oscuro con borde amarillo */
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFC300; /* Letras en amarillo */
+  border: 3px solid #FFC300; /* Borde amarillo */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   10. ELEMENTOS FLOTANTES
+   ========================================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 48px 16px;
+  }
+  
+  .hero-section {
+    min-height: 400px;
+  }
+}
+/* Ajuste para destacar la tarjeta central en PC */
+@media (min-width: 768px) {
+    .plan-card.featured {
+        transform: scale(1.05); /* Hace la tarjeta un 5% más grande */
+        z-index: 10; /* Asegura que se vea por encima de las otras */
+        border-color: #FFC300; /* Asegura el borde amarillo */
+    }
+}

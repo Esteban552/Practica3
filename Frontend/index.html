@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZayegWorkout - Gimnasio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <nav class="navbar">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <img src="Public/LogoZayeg.png" alt="LogoZayeg.png" height="80px" width="80px">
+                      </div>
+                        <span class="text-2xl font-bold">ZayegWorkout</span>
+                    </div>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a class="nav-link font-medium" onclick="scrollToSection('hero')">Inicio</a>
+                        <a class="nav-link font-medium" onclick="scrollToSection('InfoPlans')">Que incluye?</a>
+                        <a class="nav-link font-medium" onclick="scrollToSection('plans')">Planes</a>
+                        <a class="nav-link font-medium" onclick="scrollToSection('diet')">Dieta</a>
+                        <a class="nav-link font-medium" onclick="scrollToSection('team')">Equipo</a>
+                        <a class="nav-link font-medium" onclick="scrollToSection('contact')">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero" class="hero-section flex items-center justify-center text-center text-white">
+            <div class="max-w-4xl px-6">
+              <h1 id="heroTitle" class="text-5xl md:text-6xl font-bold mb-6">Transforma tu cuerpo <p></p> Cambia tu mente</h1>
+                <p id="heroSubtitle" class="text-xl md:text-2xl mb-8 text-gray-300">
+                  Unete a nuestro equipo y aprende el camino para realizar tus objetivos de la manera mas saludable posible</p>
+                <button id="heroCta" class="btn-primary" onclick="scrollToSection('contact')">Comienza Ahora</button>
+            </div>
+        </section>
+
+        <section id="mission" class="section-padding bg-[#111111]">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    
+                    <div class="text-left">
+                        <h2 id="missionTitle" class="text-4xl md:text-5xl font-bold mb-8 text-[#FFC300]">
+                            Acerca de mí
+                        </h2>
+                        
+                        <p id="missionText" class="text-lg text-gray-300 leading-relaxed mb-6">
+                            Mi nombre es Zayeg Camarillo, soy un Profesional Certificado del fitness y
+                            la nutrición con una pasión por ayudar a otros a alcanzar sus objetivos de salud y bienestar.
+                        </p>
+                        
+                        <p class="text-lg text-gray-300 leading-relaxed">
+                            Con más de 10 años de experiencia en el mundo del entrenamiento físico y la alimentación saludable,
+                            he decidido crear ZayegWorkout para compartir mis conocimientos y guiar a las personas en su viaje hacia una vida más saludable y activa.
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center md:justify-end">
+                        <img src="Public/SobreEl.jpg" 
+                            alt="Zayeg Camarillo" 
+                            class="w-full max-w-md h-auto object-cover border-[6px] border-white shadow-2xl">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+ <section id="InfoPlans" class="info-plans-section">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <h2 class="info-title">Tu camino al éxito</h2>
+                <p class="info-subtitle">Combinamos experiencia deportiva y nutrición clínica</p>
+            </div>
+
+            <div class="info-grid">
+                
+                <div class="info-card">
+                    <div class="info-img-container">
+                        <img src="Public/FotoPlan.jpg" alt="Entrenamiento Inteligente" class="info-img">
+                    </div>
+                    <h3 class="info-card-title">Rutinas Estructuradas</h3>
+                    <p class="info-card-text">
+                        Olvídate de improvisar. Recibe tu plan de entrenamiento en PDF diseñado específicamente para tus metas, ya sea gimnasio o casa.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-img-container">
+                        <img src="Public/FotoComida.jpg" alt="Nutrición Deportiva" class="info-img">
+                    </div>
+                    <h3 class="info-card-title">Nutrición Experta</h3>
+                    <p class="info-card-text">
+                        No es solo "comer menos". Nuestra <strong>Nutrióloga Deportiva</strong> diseñará un plan de alimentación delicioso y calculado para tu cuerpo.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-img-container">
+                        <img src="Public/FotoVideo.jpg" alt="Videos de Técnica" class="info-img">
+                    </div>
+                    <h3 class="info-card-title">Videos HD</h3>
+                    <p class="info-card-text">
+                        Acceso exclusivo a nuestro canal de <strong>YouTube</strong>. Aprende la técnica perfecta de cada ejercicio con explicaciones detalladas paso a paso.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans-section">
+        <div class="max-w-7xl mx-auto">
+            
+            <h2 id="plansTitle" class="plans-title text-center mb-4">Elige tu Plan de Transformación</h2>
+            <p class="plans-subtitle text-center mb-12">Asesoría 100% Online personalizada</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="plan-card">
+                    <div class="mb-4">
+                        <span class="bg-gray-800 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Entrenamiento</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Plan Rutina</h3>
+                    <div class="flex items-end gap-2 mb-6">
+                        <p class="text-4xl font-bold text-[#FFC300]">$399<span class="text-lg text-gray-400 font-normal"> mxn/mes</span></p>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 border-b border-gray-700 pb-4">Para quienes ya saben comer bien pero necesitan dirección en el gimnasio.</p>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Rutina personalizada (PDF)</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Acceso a videos en YouTube</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Revisión mensual de progreso</span></li>
+                        <li class="flex items-start gap-2 opacity-50"><span class="text-gray-600">✕</span> <span class="text-gray-500">Sin plan nutricional</span></li>
+                        <li class="flex items-start gap-2 opacity-50"><span class="text-gray-600">✕</span> <span class="text-gray-500">Sin chat 24/7</span></li>
+                    </ul>
+                    <a href="https://wa.me/526531155664?text=Hola,%20me%20interesa%20el%20Plan%20Rutina%20de%20$399" target="_blank" class="btn-secondary w-full text-center">
+                        Empezar
+                    </a>
+                </div>
+
+                <div class="plan-card featured relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-[#FFC300] text-black text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-2xl">
+                        MÁS POPULAR
+                    </div>
+                    
+                    <div class="mb-4">
+                        <span class="bg-[#FFC300] text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Total 360°</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Asesoría Completa</h3>
+                    <div class="flex flex-col mb-6">
+                        <p class="text-4xl font-bold text-white">$899<span class="text-lg text-gray-400 font-normal"> mxn/mes</span></p>
+                    </div>
+                    <p class="text-sm text-gray-300 mb-6 border-b border-gray-600 pb-4">La combinación perfecta: Entrenamiento intenso + Nutrición clínica.</p>
+                    
+                    <ul class="space-y-3 mb-8 text-white">
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span><strong>Plan Nutricional (Nutrióloga)</strong></span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Rutina personalizada (PDF)</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Acceso a videos en YouTube</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Soporte por WhatsApp</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Ajustes quincenales</span></li>
+                    </ul>
+                    <a href="https://wa.me/526531155664?text=Hola,%20quiero%20mi%20cambio%20con%20el%20Plan%20Completo" target="_blank" class="btn-primary w-full text-center">
+                        Quiero mi cambio
+                    </a>
+                </div>
+
+                <div class="plan-card">
+                    <div class="mb-4 flex justify-between items-center">
+                        <span class="bg-gray-800 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Reto</span>
+                        <span class="text-green-400 text-xs font-bold">AHORRAS $300</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Plan Trimestral</h3>
+                    <div class="flex flex-col mb-6">
+                        <p class="text-4xl font-bold text-[#FFC300]">$2,399<span class="text-lg text-gray-400 font-normal"> mxn</span></p>
+                        <p class="text-sm text-gray-400 mt-1">Pago único por 3 meses</p>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 border-b border-gray-700 pb-4">Comprométete 90 días con nosotros y garantiza tu transformación.</p>
+                    
+                    <ul class="space-y-3 mb-8 text-gray-300">
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span><strong>Todo lo del Plan Completo</strong></span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Seguimiento profundo</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Corrección de técnica (video)</span></li>
+                        <li class="flex items-start gap-2"><span class="text-primary">✓</span> <span>Suplementación deportiva</span></li>
+                    </ul>
+                    <a href="https://wa.me/526531155664?text=Hola,%20estoy%20listo%20para%20el%20Reto%20Trimestral" target="_blank" class="btn-secondary w-full text-center">
+                        Aceptar el Reto
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="diet" class="section-padding bg-[#111111]">
+        <div class="max-w-7xl mx-auto">
+            <h2 id="dietTitle" class="text-4xl font-bold text-center mb-4 text-white">Planes Nutricionales</h2>
+            <p id="dietSubtitle" class="text-xl text-gray-400 text-center mb-12">Nutrición personalizada para tus objetivos</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="diet-card">
+                    <div class="w-16 h-16 bg-[#333333] rounded-full flex items-center justify-center mb-6 mx-auto text-[#FFC300]">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.77 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center text-white">Pérdida de Peso</h3>
+                    <p class="text-gray-300 text-center mb-4">Plan diseñado para crear un déficit calórico saludable mientras mantienes tu masa muscular.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>• Menú semanal personalizado</li>
+                        <li>• Recetas fáciles y deliciosas</li>
+                        <li>• Lista de compras incluida</li>
+                        <li>• Seguimiento semanal</li>
+                    </ul>
+                </div>
+
+                <div class="diet-card">
+                    <div class="w-16 h-16 bg-[#333333] rounded-full flex items-center justify-center mb-6 mx-auto text-[#FFC300]">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center text-white">Ganancia Muscular</h3>
+                    <p class="text-gray-300 text-center mb-4">Alimentación optimizada para maximizar el crecimiento muscular con superávit calórico.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>• Alto contenido proteico</li>
+                        <li>• Timing de nutrientes</li>
+                        <li>• Suplementación recomendada</li>
+                        <li>• Ajustes mensuales</li>
+                    </ul>
+                </div>
+
+                <div class="diet-card">
+                    <div class="w-16 h-16 bg-[#333333] rounded-full flex items-center justify-center mb-6 mx-auto text-[#FFC300]">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-center text-white">Mantenimiento</h3>
+                    <p class="text-gray-300 text-center mb-4">Plan equilibrado para mantener tu peso ideal mientras disfrutas de una alimentación variada.</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>• Macros balanceados</li>
+                        <li>• Flexibilidad en comidas</li>
+                        <li>• Educación nutricional</li>
+                        <li>• Hábitos sostenibles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="team" class="section-padding bg-[#111111] text-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 id="teamTitle" class="text-4xl font-bold text-center mb-12">Conoce a Nuestro Equipo</h2>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="team-member">
+                        <img src="Public/Tecnica.jpg" alt="Zayeg Camarillo" class="team-avatar">
+                        <h3 id="trainer1Name" class="text-2xl font-bold mb-2">Zayeg Camarillo</h3>
+                        <p id="trainer1Role" class="text-lg mb-4 text-primary">Entrenador Principal</p>
+                        <p class="text-gray-300">10 años de experiencia en entrenamiento funcional y preparación física. Certificado en Gimnasio, competidor activo y nutriólogo deportiva.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Public/LizbethMedina.png" alt="Lizbeth Medina" class="team-avatar">
+                        <h3 id="trainer2Name" class="text-2xl font-bold mb-2">Lizbeth Medina</h3>
+                        <p id="trainer2Role" class="text-lg mb-4 text-primary">Nutricionista</p>
+                        <p class="text-gray-300">Especialista en nutrición deportiva certificada. Ayuda a crear planes alimenticios personalizados para que cumplas tus objetivos.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="Public/EstebanMedina.jpg" alt="EstebanMedina" class="team-avatar">
+                        <h3 id="trainer3Name" class="text-2xl font-bold mb-2">Esteban Medina</h3>
+                        <p id="trainer3Role" class="text-lg mb-4 text-primary">Especialista en Fuerza</p>
+                        <p class="text-gray-300">Ex competidor de culturismo especializado en levantamiento de pesas. Experto en técnica y prevención de lesiones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding bg-[#111111] text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 id="contactTitle" class="text-4xl font-bold mb-4">¿Listo para empezar?</h2>
+                <p id="contactSubtitle" class="text-xl text-gray-300 mb-8">Contáctanos por WhatsApp y comienza tu transformación hoy</p>
+                <div class="bg-gray-700 rounded-2xl p-12">
+                    <div class="text-6xl mb-6">📱</div>
+                    <p class="text-lg text-ehite-500 mb-6">Nuestro equipo está listo para responder todas tus preguntas y ayudarte a elegir el plan perfecto para ti.</p>
+                    <a id="whatsappButton" href="https://wa.me/526531155664?text=Hola,%20quiero%20información%20sobre%20los%20planes%20de%20ZayegWorkout" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor" />
+                        </svg>
+                        Chatear en WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+
+                    </svg>
+                    <div>
+                        <img src="Public/LogoZayeg.png" alt="LogoZayeg.png" height="80px" width="80px">
+                      </div>
+                    <span class="text-2xl font-bold">ZayegWorkout</span>
+                </div>
+                <p id="footerText" class="text-gray-400">© 2025 ZayegWorkout. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+        <a href="https://wa.me/526531155664?text=Hola,%20quiero%20información%20sobre%20ZayegWorkout" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="white" />
+            </svg>
+        </a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
